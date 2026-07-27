@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WBQYQeceGCk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Api\\Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\msi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\msi\\.nuget\\packages\\microsoft.openapi\\3.9.0\\microsoft.openapi.3.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}
