@@ -33,6 +33,20 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+app.MapPost("/webhooks/jira", async (HttpRequest request, ILogger<Program> logger) =>
+{
+    using var reader = new StreamReader(request.Body);
+    var payload = await reader.ReadToEndAsync();
+
+    logger.LogInformation("Received Jira webhook payload: {Payload}", payload);
+
+    return Results.Accepted();
+});
+
+
+
+
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

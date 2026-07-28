@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Api\\Api.csproj": {}
+    "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Api\\Api.csproj": {
+    "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Api\\Api.csproj",
+        "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\msi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Api\\obj\\",
+        "outputPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj"
+              "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj"
               },
-              "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -65,7 +65,7 @@
             },
             "Microsoft.OpenApi": {
               "target": "Package",
-              "version": "[3.9.0, )"
+              "version": "[2.9.0, )"
             }
           },
           "imports": [
@@ -505,14 +505,14 @@
         }
       }
     },
-    "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj": {
+    "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\msi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\obj\\",
+        "outputPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -534,8 +534,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -850,14 +850,14 @@
         }
       }
     },
-    "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\msi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1191,14 +1191,14 @@
         }
       }
     },
-    "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\msi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1220,8 +1220,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\msi\\Documents\\GitHub\\False-positive-reduction-system\\src\\Application\\Application.csproj"
+              "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\msi\\source\\repos\\False-positive-reduction-system\\src\\Application\\Application.csproj"
               }
             }
           }
