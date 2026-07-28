@@ -3,7 +3,7 @@
 > An intelligent platform that validates automated test failures using rule-based and AI-assisted decision making to reduce false positives in automated regression testing.
 
 ![Status](https://img.shields.io/badge/status-under%20development-orange)
-![.NET](https://img.shields.io/badge/.NET-8-blue)
+![.NET](https://img.shields.io/badge/.NET-10-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Clean-success)
 
 ---
