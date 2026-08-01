@@ -1,6 +1,15 @@
+
+
+
+using Application.Interfaces;
+
+using Infrastructure.TicketParsing;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ITicketPayloadParser, JiraPayloadParser>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
@@ -33,12 +42,19 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-app.MapPost("/webhooks/jira", async (HttpRequest request, ILogger<Program> logger) =>
+app.MapPost("/webhooks/jira", async (
+    HttpRequest request,
+    ITicketPayloadParser parser,
+    ILogger<Program> logger) =>
 {
     using var reader = new StreamReader(request.Body);
-    var payload = await reader.ReadToEndAsync();
+    var rawPayload = await reader.ReadToEndAsync();
 
-    logger.LogInformation("Received Jira webhook payload: {Payload}", payload);
+    var incident = parser.Parse(rawPayload);
+
+    logger.LogInformation(
+        "Parsed incident intake: TicketId={TicketId}, Summary={Summary}, Status={Status}, IssueType={IssueType}, Provider={Provider}",
+        incident.TicketId, incident.Summary, incident.Status, incident.IssueType, incident.SourceProvider);
 
     return Results.Accepted();
 });
