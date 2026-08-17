@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Application.Common;
 using Application.Interfaces;
-namespace Infrastructure.TicketParsing;
+namespace Infrastructure.Ticketing.Jira;
 
 public class JiraPayloadParser : ITicketPayloadParser
 {
