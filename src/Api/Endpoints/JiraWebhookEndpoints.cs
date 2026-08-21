@@ -1,26 +1,40 @@
 ﻿using Application.Interfaces;
-using Application.UseCases;
-
+using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Endpoints
 {
-    public static class JiraWebhookEndpoints
+    [ApiController]
+    [Route("webhooks")]
+    public class JiraWebhookController : ControllerBase
     {
-        public static void MapJiraWebhookEndpoints(this WebApplication app)
+        private readonly IIncidentIntakeService _incidentIntakeService;
+
+        public JiraWebhookController(
+            IIncidentIntakeService incidentIntakeService)
         {
-            app.MapPost("/webhooks/jira", async (
-                HttpRequest request,
-                IIncidentIntakeService incidentIntakeService) =>
+            _incidentIntakeService = incidentIntakeService;
+        }
+
+        [HttpPost("jira")]
+        public async Task<IActionResult> ReceiveJiraWebhook()
+        {
+            using var reader = new StreamReader(Request.Body);
+
+            var rawPayload = await reader.ReadToEndAsync();
+
+            await _incidentIntakeService.ProcessAsync(
+                rawPayload);
+
+            return Accepted();
+        }
+
+        [HttpGet("Health")]
+        public IActionResult Check()
+        {
+            return Ok(new
             {
-                using var reader = new StreamReader(request.Body);
-
-                var rawPayload = await reader.ReadToEndAsync();
-
-                await incidentIntakeService.ProcessAsync(rawPayload);
-
-                return Results.Accepted();
-            })
-            .WithName("ReceiveJiraWebhook");
+                status = "API is working"
+            });
         }
     }
 }

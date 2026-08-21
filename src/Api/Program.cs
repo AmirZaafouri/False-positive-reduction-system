@@ -1,5 +1,4 @@
 using Api.Configuration;
-using Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +6,7 @@ builder.Services
     .AddApplication()
     .AddInfrastructure(builder.Configuration);
 
+builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -18,8 +18,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapJiraWebhookEndpoints();
+app.MapControllers();
 
 app.Run();
 
+
+//is mainly there to make the Program class accessible to your integration tests.
 public partial class Program;
