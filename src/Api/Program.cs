@@ -9,6 +9,10 @@ builder.Services
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
+// Enables IExceptionHandler + RFC 7807 ProblemDetails responses
+builder.Services.AddProblemDetails();
+builder.Services.AddExceptionHandler<Api.Middleware.GlobalExceptionHandler>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -16,12 +20,13 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.UseExceptionHandler();
+
 app.UseHttpsRedirection();
 
 app.MapControllers();
 
 app.Run();
 
-
-//is mainly there to make the Program class accessible to your integration tests.
+// Exposes Program to the integration test WebApplicationFactory
 public partial class Program;

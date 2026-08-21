@@ -1,10 +1,6 @@
 ﻿using Application.Common;
 using Application.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.Extensions.Logging;
-
 
 namespace Application.UseCases
 {
@@ -20,8 +16,6 @@ namespace Application.UseCases
             _parser = parser;
             _logger = logger;
         }
-
-        public string ProviderName => throw new NotImplementedException();
 
         public Task ProcessAsync(string rawPayload)
         {

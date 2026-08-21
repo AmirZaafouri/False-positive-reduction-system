@@ -1,7 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Domain.Enums
 {
     public enum IncidentClassification
@@ -10,6 +6,7 @@ namespace Domain.Enums
         FalsePositive = 1,
         RealDefect = 2,
         EnvironmentIssue = 3,
-        TestScriptProblem = 4
+        TestScriptProblem = 4,
+        InvalidTestData = 5
     }
 }
